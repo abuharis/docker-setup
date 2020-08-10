@@ -30,12 +30,12 @@ sudo apt-get update -y
 log_info "Uninstalling any Older docker versions..."
 
 #Uninstall Old Versions of Docker
-sudo apt-get remove docker docker-engine docker.io
+sudo apt-get remove docker docker-engine docker.io -y
 
 log_info "Installing docker..."
 
 #Install docker
-sudo apt install docker.io
+sudo apt install docker.io -y
 if [ $? = 0 ]
 then
     log_info "Docker has been installed successfully"
